@@ -1,4 +1,11 @@
 <% @studios.each do |studio| %>
+  <%= binding.pry %>
   <%= studio.name %>
   <%= studio.location %>
+  <% studio.movies.each do |movie| %>
+    <%= binding.pry %>
+    <%= movie.title %>
+    <%= movie.creation_year %>
+    <%= movie.genre %>
+  <% end %>
 <% end %>
